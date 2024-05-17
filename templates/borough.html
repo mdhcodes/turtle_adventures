@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- https://stackoverflow.com/questions/32019733/getting-value-from-select-tag-using-flask -->
+    <div class="container mb-3">
+
+        <p class="sort">Find Parks by Borough:</p>
+
+        <form action="/borough" method="post" class="boroughs">
+            <select class="form-select" name="name" aria-label="Select Borough">
+                <option disabled selected>Select a Borough</option>
+                <option value="B">Brooklyn</option>
+                <option value="X">Bronx</option>
+                <option value="M">Manhattan</option>
+                <option value="Q">Queens</option>
+                <option value="R">Staten Island</option>
+            </select>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>    
+    </div>
+
+    {% for park in borough %}
+        <section class="container park-facts mb-1">
+            <p class="park-name"><a href="{{ park.url }}">{{ park.signname }}</a></p> 
+            <p>Category: {{ park.typecategory }}</p>
+            <p>Location: {{ park.location }}</p>
+            <p>Borough: {{ borough_name(park.borough) }}</p>
+            <!-- <p>Park Omppropid - ID: {{ park.omppropid }}</p> -->      
+        </section>
+    {% endfor %}
+
+{% endblock %}

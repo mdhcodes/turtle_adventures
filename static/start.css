@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #fff !important;
+  /* https://www.w3schools.com/cssref/pr_background-image.php#gsc.tab=0 */
+  background: url('central_park.jpg'); /* The image used */
+  background-color: #122D18; /* Used if the image is unavailable */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center bottom; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed; /* Image will not scroll */
+}
+
+.title {
+    padding-top: 17em;
+    font-family: 'Rubik Dirt', Arial, Helvetica, sans-serif;
+}
+
+.btn-1,
+.btn-2 {
+    margin-top: 3em !important;
+    width: 85px !important;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background: #D8DBD8 !important;
+    color: #212529 !important;
+}
+
+.btn-2 {
+    margin-left: 1em;
+}
+
+#back {
+    margin-bottom: 1em;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.message {
+    color: #A71010;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+}

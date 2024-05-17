@@ -1,0 +1,46 @@
+.logo {
+    font-family: 'Rubik Dirt', Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
+.submit-btn {
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.park-facts {
+    border: thin solid #6F727B;
+    background-color: #D9EAD3;
+    border-radius: 5px;
+}
+
+.park-name {
+    font-size: 1.3em;
+}
+
+.park-name a {
+    color: #123524;
+}
+
+.logout,
+.submit-btn {
+    background: #D9EAD3;
+    border-radius: 5px;
+}
+
+.logout:hover,
+.park-facts:hover,
+.submit-btn:hover {
+    background-color: #c7dbd2 !important;
+    transition: background-color .20s ease-in-out;
+}
+
+.search {
+    font-size: 1.4em;
+}
+
+.sort {
+    font-size: 1.2em;
+}

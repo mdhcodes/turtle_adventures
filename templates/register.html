@@ -1,0 +1,31 @@
+<link href="/static/start.css" rel="stylesheet">
+
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div>
+        <header class="title text-center">
+            <a class="btn btn-success" id="back" href="/login" role="button">Back to Login</a>
+            <h1>Turtle Adventures</h1>
+        </header>
+        <section class="text-center">
+
+            <p class="message">{{ message }}</p>
+
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <input autocomplete="off" class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" required>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password" required>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Password (again)" type="password" required>
+                </div>
+                <button class="btn btn-success" type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+
+{% endblock %}
